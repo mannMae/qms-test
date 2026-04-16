@@ -46,3 +46,15 @@ jobs:
           else
             echo "No changes to commit"
           fi
+
+      - name: Create or Update Latest Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: "Latest QMS Documents"
+          body: "This release contains the latest automated QMS documentation PDFs."
+          files: output/*.pdf
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

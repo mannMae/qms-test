@@ -16,6 +16,9 @@
 | **SDP** (Software Development Plan) | [docs/SDP.md](./docs/SDP.md) | [SDP.pdf](./output/SDP.pdf) |
 | **SRS** (Software Requirements Specification) | [docs/SRS.md](./docs/SRS.md) | [SRS.pdf](./output/SRS.pdf) |
 
+> [!TIP]
+> 모든 문서를 한꺼번에 다운로드하거나 과거 배포 이력을 확인하려면 **[가장 최신 배포본(Releases)](../../releases/tag/latest)** 페이지를 방문해 주세요.
+
 ## 테스트 시나리오
 
 다음 단계에 따라 QMS 자동화 시스템을 테스트할 수 있습니다:
