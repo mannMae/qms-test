@@ -22,3 +22,5 @@ The scope includes verifying the automated QMS documentation workflow.
 ## 4. Test Verification
 This section is added to test the automated QMS versioning.
 Last updated: 2026-04-16 09:37.
+
+- Push trigger for README update check
