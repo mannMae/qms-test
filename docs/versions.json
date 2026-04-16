@@ -1,0 +1,26 @@
+{
+  "SDP.md": {
+    "history": [
+      {
+        "v": 1,
+        "minor": 0,
+        "version": "1.0",
+        "date": "2026-04-16",
+        "reason": "Content updated via CI",
+        "author": "Antigravity AI"
+      }
+    ]
+  },
+  "SRS.md": {
+    "history": [
+      {
+        "v": 1,
+        "minor": 0,
+        "version": "1.0",
+        "date": "2026-04-16",
+        "reason": "Content updated via CI",
+        "author": "Antigravity AI"
+      }
+    ]
+  }
+}
