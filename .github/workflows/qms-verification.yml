@@ -1,0 +1,46 @@
+name: QMS Document Verification
+
+on:
+  push:
+    branches:
+      - main
+      - test
+    paths:
+      - 'docs/**'
+
+jobs:
+  verify-qms:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "Antigravity AI"
+          git config user.email "antigravity@example.com"
+
+      - name: Run QMS Automation
+        uses: mannMae/auto-qms-test@main
+        with:
+          docs_dir: 'docs'
+          output_dir: 'output'
+
+      - name: Upload PDF Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: qms-documents
+          path: output/*.pdf
+
+      - name: Commit Updated Documents
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git add docs/
+            git commit -m "docs: auto-update document version and history"
+            git push
+          else
+            echo "No changes to commit"
+          fi
