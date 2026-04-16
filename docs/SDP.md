@@ -24,3 +24,5 @@ This section is added to test the automated QMS versioning.
 Last updated: 2026-04-16 09:37.
 
 - Push trigger for README update check
+
+- Enabling Auto-Release and README link syncing.
