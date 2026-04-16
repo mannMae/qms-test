@@ -7,6 +7,15 @@
 - `.github/workflows/`: QMS 자동화 워크플로우 설정 파일.
 - `output/`: (워크플로우 실행 시 생성되는) PDF 파일 저장 경로.
 
+## 📄 생성된 문서 목록
+
+현재 관리되고 있는 문서 및 생성된 PDF 링크입니다:
+
+| 문서 이름 | 원본 (Markdown) | 생성된 PDF (URL) |
+| :--- | :--- | :--- |
+| **SDP** (Software Development Plan) | [docs/SDP.md](./docs/SDP.md) | [SDP.pdf](./output/SDP.pdf) |
+| **SRS** (Software Requirements Specification) | [docs/SRS.md](./docs/SRS.md) | [SRS.pdf](./output/SRS.pdf) |
+
 ## 테스트 시나리오
 
 다음 단계에 따라 QMS 자동화 시스템을 테스트할 수 있습니다:

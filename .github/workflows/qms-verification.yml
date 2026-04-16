@@ -40,8 +40,8 @@ jobs:
       - name: Commit Updated Documents
         run: |
           if [ -n "$(git status --porcelain)" ]; then
-            git add docs/
-            git commit -m "docs: auto-update document version and history"
+            git add docs/ output/
+            git commit -m "docs: auto-update document version and history (including PDFs)"
             git push
           else
             echo "No changes to commit"
