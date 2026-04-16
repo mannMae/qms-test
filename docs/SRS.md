@@ -15,6 +15,7 @@ This document specifies the requirements for the QMS testing project.
 - R1: The system shall detect changes in Markdown files.
 - R2: The system shall update version numbers automatically.
 - R3: The system shall generate PDF versions of documents.
+- R4: (Test) This requirement is added to trigger the updated CI workflow.
 
 ## 3. History
 | Version | Date | Description | Author |
